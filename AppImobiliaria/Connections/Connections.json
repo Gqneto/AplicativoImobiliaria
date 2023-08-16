@@ -1,0 +1,71 @@
+{
+  "19cfb8bd-2071-46e3-8ef7-692e5dab39e3": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "authenticationType": "shared-application",
+      "displayName": "Gmail",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1626/1.0.1626.3238/gmail/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_gmail",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Gmail"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "19cfb8bd-2071-46e3-8ef7-692e5dab39e3"
+  },
+  "4864ebf8-b475-4a4e-add0-fc198ed0a1fc": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://gqtec2307.sharepoint.com/sites/App_imobiliaria": {
+        "dataSources": {
+          "Lista_funcionarios": {
+            "tableName": "498fd041-b9bd-48fe-912a-872992c7bb05"
+          },
+          "lista_imoveis": {
+            "tableName": "ee7ae7e9-b8ec-412a-a8d8-174971ea4a42"
+          },
+          "lista_vistorias": {
+            "tableName": "5afb5557-9149-45df-a5f2-636e9dc05fd2"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Lista_funcionarios",
+      "lista_imoveis",
+      "lista_vistorias"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4864ebf8-b475-4a4e-add0-fc198ed0a1fc"
+  },
+  "f99d262f-212e-4b68-be65-f26475573923": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Bing Mapas",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/bingmaps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_bingmaps",
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_bingmaps/connections/c28ec1b8273447b9895666e7766afd15"
+    },
+    "datasets": {},
+    "dataSources": [
+      "BingMapas"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f99d262f-212e-4b68-be65-f26475573923"
+  }
+}

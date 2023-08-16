@@ -1,0 +1,512 @@
+tela_vistoria As screen:
+    Fill: =RGBA(29, 29, 29, 1)
+    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+
+    Rectangle2 As rectangle:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        Height: =96
+        Width: =640
+        ZIndex: =1
+
+    Icon6 As icon.BackArrow:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(135, 190, 82, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(tela_inicial)
+        X: =12
+        Y: =16
+        ZIndex: =2
+
+    Label4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =30
+        Text: ="VISTORIAS"
+        Width: =366
+        X: =76
+        Y: =36
+        ZIndex: =3
+
+    Dropimovel As dropdown:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        ChevronBackground: =RGBA(12, 126, 44, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =84
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(53, 74, 36, 1)
+        Items: =lista_imoveis
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(135, 190, 82, 1)
+        SelectionFill: =RGBA(12, 126, 44, 1)
+        Size: =15
+        Width: =368
+        X: =250
+        Y: =125
+        ZIndex: =4
+
+    Dtvistoria As datepicker:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        CalendarHeaderFill: =RGBA(12, 126, 44, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =50
+        HoverDateFill: =RGBA(53, 74, 36, 1)
+        IconBackground: =RGBA(12, 126, 44, 1)
+        SelectedDateFill: =RGBA(12, 126, 44, 1)
+        Size: =24
+        Width: =265
+        X: =345
+        Y: =258
+        ZIndex: =5
+
+    Dropdownfuncionario As dropdown:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        ChevronBackground: =RGBA(12, 126, 44, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =43
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(53, 74, 36, 1)
+        Items: =Lista_funcionarios
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(135, 190, 82, 1)
+        SelectionFill: =RGBA(12, 126, 44, 1)
+        Size: =21
+        Width: =308
+        Y: =265
+        ZIndex: =6
+
+    Label6 As label:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =122
+        Size: =16
+        Text: |-
+            ="Endereço do Imóvel:"
+        Width: =230
+        Y: =92
+        ZIndex: =7
+
+    Label7 As label:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =74
+        Size: =15
+        Text: |-
+            ="Responsável pela vistoria:"
+        Width: =296
+        Y: =210
+        ZIndex: =8
+
+    Label8 As label:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =63
+        Size: =15
+        Text: |-
+            ="Data:"
+        Width: =246
+        X: =372
+        Y: =214
+        ZIndex: =9
+
+    aval_pintura As rating:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =0
+        Default: =3
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =Self.Fill
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderColor: =Self.BorderColor
+        FocusedBorderThickness: =2
+        Height: =33
+        HoverFill: =Self.Fill
+        PressedFill: =Self.Fill
+        RatingFill: =RGBA(255, 255, 0, 1)
+        Width: =209
+        X: =125
+        Y: =331
+        ZIndex: =10
+
+    obspintura As text:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderThickness: =2
+        Color: =RGBA(20, 20, 20, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(206, 229, 213, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =115
+        HintText: ="Observações"
+        HoverBorderColor: =RGBA(135, 190, 82, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(53, 74, 36, 1)
+        Size: =13
+        Width: =310
+        Y: =374
+        ZIndex: =11
+
+    Label9 As label:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =33
+        Size: =21
+        Text: |-
+            ="Pintura:"
+        Width: =209
+        Y: =331
+        ZIndex: =13
+
+    aval_pisos As rating:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =0
+        Default: =3
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =Self.Fill
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderColor: =Self.BorderColor
+        FocusedBorderThickness: =2
+        Height: =33
+        HoverFill: =Self.Fill
+        PressedFill: =Self.Fill
+        RatingFill: =RGBA(255, 255, 0, 1)
+        Width: =209
+        X: =113
+        Y: =513
+        ZIndex: =14
+
+    obspisos As text:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderThickness: =2
+        Color: =RGBA(20, 20, 20, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =115
+        HintText: ="Observações"
+        HoverBorderColor: =RGBA(135, 190, 82, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(53, 74, 36, 1)
+        Size: =13
+        Width: =310
+        X: =2
+        Y: =567
+        ZIndex: =15
+
+    Label9_1 As label:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =53
+        Size: =21
+        Text: |-
+            ="Pisos:"
+        Width: =133
+        X: =5
+        Y: =499
+        ZIndex: =17
+
+    obshidraulica As text:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderThickness: =2
+        Color: =RGBA(20, 20, 20, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =115
+        HintText: ="Observações"
+        HoverBorderColor: =RGBA(135, 190, 82, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(53, 74, 36, 1)
+        Size: =13
+        Width: =310
+        X: =2
+        Y: =768
+        ZIndex: =19
+
+    Label9_2 As label:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =99
+        Size: =19
+        Text: |-
+            ="Hidráulica:"
+        Width: =138
+        Y: =677
+        ZIndex: =21
+
+    aval_fiacao As rating:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =0
+        Default: =3
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =Self.Fill
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderColor: =Self.BorderColor
+        FocusedBorderThickness: =2
+        Height: =33
+        HoverFill: =Self.Fill
+        PressedFill: =Self.Fill
+        RatingFill: =RGBA(255, 255, 0, 1)
+        Width: =209
+        X: =110
+        Y: =934
+        ZIndex: =22
+
+    obsfiaca As text:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderThickness: =2
+        Color: =RGBA(20, 20, 20, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =115
+        HintText: ="Observações"
+        HoverBorderColor: =RGBA(135, 190, 82, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(53, 74, 36, 1)
+        Size: =13
+        Width: =310
+        X: =5
+        Y: =994
+        ZIndex: =23
+
+    Label9_3 As label:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =86
+        Size: =21
+        Text: |-
+            ="Fiação:"
+        Width: =121
+        X: =2
+        Y: =908
+        ZIndex: =25
+
+    aval_hidraulica As rating:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =0
+        Default: =3
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =Self.Fill
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderColor: =Self.BorderColor
+        FocusedBorderThickness: =2
+        Height: =33
+        HoverFill: =Self.Fill
+        PressedFill: =Self.Fill
+        RatingFill: =RGBA(255, 255, 0, 1)
+        Width: =209
+        X: =136
+        Y: =708
+        ZIndex: =26
+
+    Button4 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(20, 20, 20, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =77
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        OnSelect: |
+            =Patch(lista_vistorias,Defaults(lista_vistorias), {
+                data_vistoria:Dtvistoria.SelectedDate,
+                Id_funcionario:Dropdownfuncionario.Selected.ID,
+                id_imovel:Dropimovel.Selected.ID,
+                pintura_avaliacao:aval_pintura.Value,
+                pintura_obs:obspintura.Text,
+                pintura_foto:UploadedImage1.Image,
+                pisos_avaliacao:aval_pisos.Value,
+                pisos_obs:obspisos.Text,
+                pisos_foto:UploadedImage2.Image,
+                hidraulica_avaliacao:aval_hidraulica.Value,
+                hidraulica_obs:obshidraulica.Text,
+                hidraulica_foto:UploadedImage4.Image,
+                fiacao_avaliacao:aval_fiacao.Value,
+                fiacao_obs:obsfiaca.Text,
+                fiacao_foto:UploadedImage5_1.Image
+            });
+            
+            Notify("Vistoria adicionada com SUCESSO!");
+            
+            Gmail.SendEmailV2(Dropdownfuncionario.Selected.email,{Subject:"Sua vistoria",Body:"A vistoria do" & " "& Dropimovel.Selected.tipo_imovel & " localizado em" & Dropimovel.Selected.endereco & "foi finalizada, a seguir as avaliações:  
+            <BR><BR>Pintura: Nota" & aval_pintura.Value & " " & obspintura.Text &
+            "<BR><BR>Pisos: Nota" & aval_pisos.Value & " " & obspisos.Text &
+            "<BR><BR>Hidraulica : Nota" & aval_hidraulica.Value & " " & obshidraulica.Text &
+            "<BR><BR>Fiação: Nota" & aval_fiacao.Value & " " & obsfiaca.Text});
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =24
+        Text: ="Adicionar"
+        Width: =210
+        X: =430
+        Y: =17
+        ZIndex: =27
+
+    imgpintura As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =28
+
+        UploadedImage1 As image:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =173
+            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+            ImagePosition: =ImagePosition.Fill
+            Width: =256
+            X: =354
+            Y: =326
+            ZIndex: =29
+
+        AddMediaButton1 As addMedia:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =221
+            Size: =25
+            Width: =318
+            X: =322
+            Y: =303
+            ZIndex: =30
+
+    imgpisos As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =31
+
+        UploadedImage2 As image:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =162
+            Image: =If(IsBlank(AddMediaButton2.Media), SampleImage, AddMediaButton2.Media)
+            ImagePosition: =ImagePosition.Fill
+            Width: =268
+            X: =350
+            Y: =565
+            ZIndex: =32
+
+        AddMediaButton2 As addMedia:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =162
+            Size: =25
+            Width: =268
+            X: =350
+            Y: =565
+            ZIndex: =33
+
+    imghidrau As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =34
+
+        UploadedImage4 As image:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =166
+            Image: =If(IsBlank(AddMediaButton4.Media), SampleImage, AddMediaButton4.Media)
+            ImagePosition: =ImagePosition.Fill
+            Width: =286
+            X: =354
+            Y: =768
+            ZIndex: =35
+
+        AddMediaButton4 As addMedia:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =166
+            Size: =25
+            Width: =286
+            X: =354
+            Y: =768
+            ZIndex: =36
+
+    imgfiacao As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =20
+        ZIndex: =37
+
+        UploadedImage5_1 As image:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =166
+            Image: =If(IsBlank(AddMediaButton4_1.Media), SampleImage, AddMediaButton4_1.Media)
+            ImagePosition: =ImagePosition.Fill
+            Width: =286
+            X: =354
+            Y: =968
+            ZIndex: =38
+
+        AddMediaButton4_1 As addMedia:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =166
+            Size: =25
+            Width: =286
+            X: =354
+            Y: =967
+            ZIndex: =39
+

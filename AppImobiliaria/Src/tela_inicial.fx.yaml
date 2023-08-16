@@ -1,0 +1,148 @@
+tela_inicial As screen:
+    Fill: =RGBA(29, 29, 29, 1)
+    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+
+    Image3 As image:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =1136
+        Image: ='primeira-casa-1'
+        ImagePosition: =ImagePosition.Fill
+        Transparency: =0.8
+        Width: =640
+        ZIndex: =1
+
+    Image4 As image:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =132
+        Image: =User().Image
+        RadiusBottomLeft: =55
+        RadiusBottomRight: =55
+        RadiusTopLeft: =55
+        RadiusTopRight: =55
+        Width: =134
+        X: =506
+        ZIndex: =2
+
+    Label1 As label:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =53
+        Size: =18
+        Text: =User().FullName
+        Width: =322
+        X: =184
+        ZIndex: =3
+
+    Label2 As label:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =56
+        Size: =12
+        Text: =User().Email
+        Width: =430
+        X: =76
+        Y: =53
+        ZIndex: =4
+
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =125
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        OnSelect: =Navigate(tela_funcionarios)
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =22
+        Text: ="Funcionários"
+        Width: =622
+        X: =9
+        Y: =259
+        ZIndex: =5
+
+    Button2_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =125
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        OnSelect: =Navigate(tela_imoveis)
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =22
+        Text: ="Imóveis"
+        Width: =622
+        X: =9
+        Y: =522
+        ZIndex: =6
+
+    Button2_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =125
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        OnSelect: =Navigate(tela_vistoria)
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =22
+        Text: ="Vistorias"
+        Width: =622
+        X: =9
+        Y: =782
+        ZIndex: =7
+
+    Icon1 As icon.People:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.People
+        OnSelect: =Navigate(tela_funcionarios)
+        X: =523
+        Y: =289
+        ZIndex: =8
+
+    Icon2 As icon.Key:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Key
+        OnSelect: =Navigate(tela_imoveis)
+        X: =541
+        Y: =552
+        ZIndex: =9
+
+    Icon3 As icon.Notebook:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(20, 20, 20, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        Icon: =Icon.Notebook
+        OnSelect: =Navigate(tela_vistoria)
+        X: =541
+        Y: =826
+        ZIndex: =10
+
